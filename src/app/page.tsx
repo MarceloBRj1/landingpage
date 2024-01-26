@@ -1,23 +1,19 @@
 import IntroSection from "./_components/intro-section";
 import AboutSection from "./_components/about-section";
+import TechSection from "./_components/tech-section";
+import FaqSection from "./_components/faq-section";
 export default function Home() {
   return (
     <main>
       <IntroSection />
       <AboutSection />
+      <TechSection />
 
-      <section id="about">
-        <h1 className="text-primary">About</h1>
+      <section id="valores">
+        <h1 className="text-primary">Valores</h1>
       </section>
-      <section id="stack">
-        <h1 className="text-primary">Stacks</h1>
-      </section>
-      <section id="investimento">
-        <h1 className="text-primary">Investimento</h1>
-      </section>
-      <section id="faq">
-        <h1 className="text-primary">Faq</h1>
-      </section>
+      
+      <FaqSection />
     </main>
   );
 }

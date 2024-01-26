@@ -1,5 +1,6 @@
 import React from 'react'
 import { ModeToggle } from './mode-toggle'
+import { ArrowBigRight, ArrowRight } from 'lucide-react'
 
 const IntroSection = () => {
   return (
@@ -15,7 +16,7 @@ const IntroSection = () => {
       </svg>
         <div className="container flex max-w-[64rem] flex-col items-center text-center gap-4">
           <span className="rounded-2xl px-4 bg-muted py-1.5 text-sm font-medium flex items-center">
-            Entre para a turma e aprenda
+            Escolha o tema  <ArrowRight className='ml-2' />
           <ModeToggle />
           </span>
           <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl">
@@ -26,12 +27,11 @@ const IntroSection = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reprehenderit officiis beatae molestias fugiat, aspernatur esse, quidem nesciunt rem fugit laborum! Asperiores perspiciatis, maxime veritatis aut tenetur eligendi ullam reprehenderit.
           </p>
           <div className="space-x-4">
-            <a href="#investimento" className=" bg-primary text-cyan-50 py-2 px-4 rounded-lg shadow-lg font-semibold">Quero fazer parte</a>
-            <a href="#stack" className=" btn btn-ghost py-2 px-4 bg-transparent rounded-full shadow-lg font-semibold">Saiba Mais</a>
+            <a href="#valores" className=" bg-primary text-cyan-50 py-2 px-4 rounded-lg shadow-lg font-semibold">Contato</a>
+            <a href="#faq" className=" btn btn-ghost py-2 px-4 bg-transparent rounded-full shadow-lg font-semibold">Saiba Mais</a>
 
           </div>
         </div>
-        <h1 className="text-primary">Sobre </h1>
       </section>
   )
 }
