@@ -1,3 +1,12 @@
+import { 
+  Accordion, 
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+import { AccordionHeader } from "@radix-ui/react-accordion"
+
+
 function FaqSection() {
   return (
       <section id="faq"
@@ -6,10 +15,37 @@ function FaqSection() {
         <h2 className='font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl'>
           FAQ
         </h2>
-        <p className='max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum iusto aliquid quaerat ipsum velit rerum earum neque fuga quod labore!  
-        </p>
       </div>
+        <div className="mx-auto text-center md:max-w-[50rem]">
+        <Accordion type="single" collapsible className="w-full">
+          <AccordionItem value="item-1">
+            <AccordionTrigger>
+              Aceitam boletos?
+            </AccordionTrigger>
+            <AccordionContent>
+              1000reais. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam esse dolorum nihil harum animi labore accusamus nesciunt fugit eos praesentium?
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-2">
+            <AccordionTrigger>Item 2</AccordionTrigger>
+            <AccordionContent>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus dicta fugit, minus quas cum at eius labore dignissimos consectetur error!
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-3">
+            <AccordionTrigger>Item 3</AccordionTrigger>
+            <AccordionContent>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus dicta fugit, minus quas cum at eius labore dignissimos consectetur error!
+            </AccordionContent>
+          </AccordionItem> <AccordionItem value="item-4">
+            <AccordionTrigger>Item 4</AccordionTrigger>
+            <AccordionContent>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus dicta fugit, minus quas cum at eius labore dignissimos consectetur error!
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>    
+
+        </div>
       </section>
   )
 }

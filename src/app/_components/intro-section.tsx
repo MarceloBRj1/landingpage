@@ -17,18 +17,18 @@ const IntroSection = () => {
         <div className="container flex max-w-[64rem] flex-col items-center text-center gap-4">
           <span className="rounded-2xl px-4 bg-muted py-1.5 text-sm font-medium flex items-center">
             Escolha o tema  <ArrowRight className='ml-2' />
-          <ModeToggle />
+          <ModeToggle  />
           </span>
           <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl">
             The Next Dev <br />
-            Front-end <span className="text-primary">Next.js</span>
+            Front-end <span className="text-primary dark:text-violet-600">Next.js</span>
           </h1>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reprehenderit officiis beatae molestias fugiat, aspernatur esse, quidem nesciunt rem fugit laborum! Asperiores perspiciatis, maxime veritatis aut tenetur eligendi ullam reprehenderit.
           </p>
           <div className="space-x-4">
-            <a href="#valores" className=" bg-primary text-cyan-50 py-2 px-4 rounded-lg shadow-lg font-semibold">Contato</a>
-            <a href="#faq" className=" btn btn-ghost py-2 px-4 bg-transparent rounded-full shadow-lg font-semibold">Saiba Mais</a>
+            <a href="#investimento" className=" bg-primary text-cyan-50 py-2 px-4 rounded-lg shadow-lg font-semibold dark:bg-violet-600 ">Contato</a>
+            <a href="#stack" className=" btn btn-ghost py-2 px-4 bg-transparent rounded-full shadow-lg font-semibold">Saiba Mais</a>
 
           </div>
         </div>
