@@ -18,6 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <link rel="icon" href="/fav.svg" />
+
       <body className={cn('min-h-screen bg-background font-mono antialiased')}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}  
